@@ -1,0 +1,19 @@
+<ModMetaData>
+
+	<name>ReGrowth: Anima Forest</name>
+	<author>Helixien, Sarg, Taranchuk, Oskar Potocki</author>
+	<packageId>ReGrowth.BOTR.AnimaForest</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>ReGrowth.BOTR.Core</packageId>
+			<displayName>ReGrowth - Core</displayName>
+			<downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description/>
+
+</ModMetaData>

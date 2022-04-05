@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BushBase">
+		<defName>RG-AF_Plant_AnimaHeartBlossom</defName>
+		<label>anima heart blossom</label>
+		<description>.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RG-AF_AnimaPearls</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Beauty>6</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/AnimaHeartBlossom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RG-AF_AnimaPearls</harvestedThingDef>
+			<topWindExposure>0.07</topWindExposure>
+			<wildClusterRadius>-1</wildClusterRadius>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaRoot</defName>
+		<label>anima root</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/AnimaRoot</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.55~0.95</visualSizeRange>
+			<topWindExposure>0.5</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaBrambles</defName>
+		<label>anima brambles</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>100</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/AnimaBrambles</texPath>
+			<drawSize>1.4</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Flowers =============================-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_AnimaBell</defName>
+		<label>anima bell</label>
+		<description>Clumps of vines that burst through the soil to bloom into beautiful flowers. Believed to be part of great collective roots that spread deep under the terrain which occasionally breach the surface to pollinate. The attractive qualities of the flowers encourage humans not to remove them.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/AnimaBell</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>RG-AF_Plant_MysticCap</defName>
+		<label>mystic cap</label>
+		<description>Can be harvested for raw fungus.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RawFungus</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MysticCap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>10</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<maxMeshCount>4</maxMeshCount>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Wild - Trees ============================-->
+
+	<ThingDef ParentName="TreeBase" Name="TreeAnima">
+		<defName>RG-AF_Plant_TreeAnima</defName>
+		<label>anima tree</label>
+		<description>A rare tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, anima trees develop a unique form of psychic symbiosis with surrounding lifeforms, allowing them to grow in a wide variety of biomes.\n\nMost tribes believe that anima trees are not simply trees, but are rather the physical extremities of a single world spirit.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeAnima</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MeditationPlantGrowthOffset>0</MeditationPlantGrowthOffset>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>1.8~2.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<allowAutoCut>false</allowAutoCut>
+			<warnIfMarkedForCut>true</warnIfMarkedForCut>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>RG-AF_Plant_TreeAnimaAncient</defName>
+		<label>ancient anima tree</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Plant/AnimaTreeAncient</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.12, 0.08, 0.1)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<statBases>
+			<Beauty>7</Beauty>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>800</MaxHitPoints>
+		</statBases>
+		<ingestible/>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>4.5~5.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<harvestYield>10</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False"/>
+			<topWindExposure>0.03</topWindExposure>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3.5</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+				<thought>AnimaScream</thought>
+				<message>The anima tree has died and emitted a disturbing psychic scream.</message>
+			</li>
+			<li Class="CompProperties_PlaySoundOnDestroy">
+				<sound>AnimaTreeScream</sound>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
