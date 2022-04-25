@@ -112,13 +112,12 @@
 			<overlay>(0.5,0.5,0.5)</overlay>
 			<saturation>0.9</saturation>
 		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="VFECore.WeatherLetterExtensions">
+				<letterDef>ThreatSmall</letterDef>
+				<letterTitle>Psychic storm</letterTitle>
+				<letterText>PLACEHOLDER</letterText>
+			</li>
+		</modExtensions>
 	</WeatherDef>
 </Defs>
-
-
-
-
-
-
-
-
