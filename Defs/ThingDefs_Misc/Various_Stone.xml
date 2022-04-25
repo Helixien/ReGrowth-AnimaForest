@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- ================ Jadeite ================ -->
 	<ThingDef ParentName="UglyRockBase" Name="RG_JadeiteBase">
 		<defName>RG_Jadeite</defName>
@@ -22,7 +21,6 @@
 			<smoothedThing>RG_SmoothedJadeite</smoothedThing>
 		</building>
 	</ThingDef>
-
 	<ThingDef ParentName="RG_JadeiteBase">
 		<defName>RG_SmoothedJadeite</defName>
 		<label>smoothed jadeite</label>
@@ -50,7 +48,6 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-
 	<ThingDef ParentName="ChunkRockBase">
 		<defName>RG_ChunkJadeite</defName>
 		<label>jadeite chunk</label>
@@ -66,7 +63,6 @@
 			<BlocksSandstone>20</BlocksSandstone>
 		</butcherProducts>
 	</ThingDef>
-
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>RG_Make_JadeFromJadeite</defName>
 		<label>make jade</label>
@@ -90,5 +86,4 @@
 			<Jade>8</Jade>
 		</products>
 	</RecipeDef>
-
 </Defs>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!--============================ Anima Heart Blossom =============================-->
 	<ThingDef ParentName="BushBase">
-		<defName>RG-AF_Plant_AnimaHeartBlossom</defName>
+		<defName>RG_Plant_AnimaHeartBlossom</defName>
 		<label>anima heart blossom</label>
 		<description>.</description>
 		<descriptionHyperlinks>
-			<ThingDef>RG-AF_AnimaPearls</ThingDef>
+			<ThingDef>RG_AnimaPearls</ThingDef>
 		</descriptionHyperlinks>
 		<statBases>
 			<Beauty>6</Beauty>
@@ -23,14 +23,14 @@
 		<plant>
 			<harvestYield>10</harvestYield>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RG-AF_AnimaPearls</harvestedThingDef>
+			<harvestedThingDef>RG_AnimaPearls</harvestedThingDef>
 			<topWindExposure>0.07</topWindExposure>
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
-	
+	<!--============================ Anima Root =============================-->
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-AF_Plant_AnimaRoot</defName>
+		<defName>RG_Plant_AnimaRoot</defName>
 		<label>anima root</label>
 		<description>.</description>
 		<statBases>
@@ -54,14 +54,14 @@
 			<wildClusterWeight>40</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 		</plant>
-			<li Class="CompProperties_Glower">
-				<glowRadius>1</glowRadius>
-				<glowColor>(110,116,125,0)</glowColor>
-			</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(110,116,125,0)</glowColor>
+		</li>
 	</ThingDef>
-	
+	<!--============================ Anima Brambles =============================-->
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-AF_Plant_AnimaBrambles</defName>
+		<defName>RG_Plant_AnimaBrambles</defName>
 		<label>anima brambles</label>
 		<description>.</description>
 		<statBases>
@@ -90,10 +90,9 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-
-	<!--============================ Flowers =============================-->
+	<!--============================ Anima Bell =============================-->
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-AF_Plant_AnimaBell</defName>
+		<defName>RG_Plant_AnimaBell</defName>
 		<label>anima bell</label>
 		<description>Clumps of vines that burst through the soil to bloom into beautiful flowers. Believed to be part of great collective roots that spread deep under the terrain which occasionally breach the surface to pollinate. The attractive qualities of the flowers encourage humans not to remove them.</description>
 		<statBases>
@@ -120,9 +119,9 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-
+	<!--============================ Anima Mystic Cap =============================-->
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-AF_Plant_MysticCap</defName>
+		<defName>RG_Plant_MysticCap</defName>
 		<label>mystic cap</label>
 		<description>Can be harvested for raw fungus.</description>
 		<descriptionHyperlinks>
@@ -164,11 +163,9 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-
-	<!--============================ Wild - Trees ============================-->
-
+	<!--============================ Anima Tree =============================-->
 	<ThingDef ParentName="TreeBase" Name="TreeAnima">
-		<defName>RG-AF_Plant_TreeAnima</defName>
+		<defName>RG_Plant_TreeAnima</defName>
 		<label>anima tree</label>
 		<description>A rare tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, anima trees develop a unique form of psychic symbiosis with surrounding lifeforms, allowing them to grow in a wide variety of biomes.\n\nMost tribes believe that anima trees are not simply trees, but are rather the physical extremities of a single world spirit.</description>
 		<graphicData>
@@ -219,9 +216,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+	<!--============================ Ancient Anima Tree =============================-->
 	<ThingDef ParentName="TreeBase">
-		<defName>RG-AF_Plant_TreeAnimaAncient</defName>
+		<defName>RG_Plant_TreeAnimaAncient</defName>
 		<label>ancient anima tree</label>
 		<description>.</description>
 		<graphicData>
@@ -270,5 +267,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 </Defs>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+	<!-- ================ Psychic Fog Effect ================ -->
 	<HediffDef>
-		<defName>RG_AF_PsychicFogEffect</defName>
+		<defName>RG_PsychicFogEffect</defName>
 		<label>psychic fog effect</label>
 		<description>PLACEHOLDER</description>
 		<hediffClass>AnimaForest.Hediff_PsychicFogEffect</hediffClass>
@@ -17,9 +17,9 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	<!-- ================ Psychic Brain Worm ================ -->
 	<HediffDef>
-		<defName>RG_AF_PsychicBrainworm</defName>
+		<defName>RG_PsychicBrainworm</defName>
 		<label>Psychic brainworm</label>
 		<description>An elusive parasite inside the brain. It’s connected directly to the frontal lobes, and is known to dissolve them if a victim tries to cast a psycast, removing the person’s ability to think.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -32,9 +32,9 @@
 			</li>
 		</comps>
 	</HediffDef>
-
+	<!-- ================ Psychic Brain Worm Paralysis ================ -->
 	<HediffDef>
-		<defName>RG_AF_PsychicBrainwormParalysis</defName>
+		<defName>RG_PsychicBrainwormParalysis</defName>
 		<label>Psychic paralysis</label>
 		<description>PLACEHOLDER</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -49,9 +49,9 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	<!-- ================ Anima Spores ================ -->
 	<HediffDef>
-		<defName>RG_AF_AnimaSpores</defName>
+		<defName>RG_AnimaSpores</defName>
 		<label>Anima spores</label>
 		<description>Microscopic anima spores that made their way into the nervous system. Whilst providing a major mood increase, the neural payload greatly lowers consciousness.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -66,9 +66,8 @@
 			</li>
 		</stages>
 	</HediffDef>
-
 	<ThoughtDef>
-		<defName>RG_AF_AnimaSpores</defName>
+		<defName>RG_AnimaSpores</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>RG_AF_AnimaSpores</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -80,16 +79,16 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	
+	<!-- ================ Psychic Insanity ================ -->
 	<HediffDef>
-		<defName>RG_AF_PsychicInsanity</defName>
+		<defName>RG_PsychicInsanity</defName>
 		<label>Psychic insanity</label>
 		<description>When the brain tunes in to a certain wavelength, psychic insanity can occur at random. Victims of this disease are known to just casually wander around, without a clear purpose.</description>
 		<hediffClass>AnimaForest.Hediff_PsychicInsanity</hediffClass>
 	</HediffDef>
-	
+	<!-- ================ Neural Migraine ================ -->
 	<HediffDef>
-		<defName>RG_AF_NeuralMigraine</defName>
+		<defName>RG_NeuralMigraine</defName>
 		<label>Neural migraine</label>
 		<description>Similar to psychic hangover, a neural migraine can randomly occur with all psycasters. It’s bothersome and can lead to a large amount of mental breaks if the person snaps.</description>
 		<hediffClass>HediffWithComps</hediffClass>

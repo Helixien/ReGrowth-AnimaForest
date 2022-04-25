@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<BiomeDef>
-		<defName>RG_AF_AnimaForest</defName>
+		<defName>RG_AnimaForest</defName>
 		<label>anima forest</label>
 		<description>A legendary biome featured in folk tales of tribal groups for centuries. Highly revered, this forest allows ancient tribes to gain immense psychic powers, but it requires respect and absence of any technology. Players can choose to settle in Anima Forest, angering other tribes and possibly excavating rare resources at the cost of the wrath of the forest.</description>
 		<workerClass>ReGrowthCore.BiomeWorker_AnimaForest</workerClass>
@@ -23,36 +22,24 @@
 		<diseaseMtbDays>35</diseaseMtbDays>
 		<diseases>
 			<li>
-				<diseaseInc>RG_AF_Disease_PsychicBrainworm</diseaseInc>
+				<diseaseInc>RG_Disease_PsychicBrainworm</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
-				<diseaseInc>RG_AF_Disease_AnimaSpores</diseaseInc>
+				<diseaseInc>RG_Disease_AnimaSpores</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
-				<diseaseInc>RG_AF_Disease_PsychicInsanity</diseaseInc>
+				<diseaseInc>RG_Disease_PsychicInsanity</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
-				<diseaseInc>RG_AF_Disease_NeuralMigraine</diseaseInc>
+				<diseaseInc>RG_Disease_NeuralMigraine</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Plague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_GutWorms</diseaseInc>
-				<commonality>80</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_MuscleParasites</diseaseInc>
-				<commonality>80</commonality>
 			</li>
 			<li>
 				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
@@ -140,24 +127,17 @@
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>10</RainyThunderstorm>
 			<FoggyRain>10</FoggyRain>
-			<RG_FoggySnow>2</RG_FoggySnow>
-			<RG_Drizzle>2</RG_Drizzle>
-			<RG_Overcast>6</RG_Overcast>
-			<RG_Windy>8</RG_Windy>
-			<RG_Monsoon>0.5</RG_Monsoon>
-			<RG_Hail>1</RG_Hail>
-			<RG_Hail>1</RG_Hail>
-			<RG_AF_PsychicFog>1</RG_AF_PsychicFog>
+			<RG_PsychicFog>1</RG_PsychicFog>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>8</Plant_Grass>
 			<Plant_TallGrass>3</Plant_TallGrass>
 			<Plant_GrassAnima>4</Plant_GrassAnima>
-			<RG-AF_Plant_AnimaRoot>1</RG-AF_Plant_AnimaRoot>
-			<RG-AF_Plant_AnimaBrambles>3</RG-AF_Plant_AnimaBrambles>
-			<RG-AF_Plant_AnimaBell>1</RG-AF_Plant_AnimaBell>
-			<RG-AF_Plant_TreeAnima>0.2</RG-AF_Plant_TreeAnima>
-			<RG-AF_Plant_TreeAnimaAncient>0.05</RG-AF_Plant_TreeAnimaAncient>
+			<RG_Plant_AnimaRoot>1</RG_Plant_AnimaRoot>
+			<RG_Plant_AnimaBrambles>3</RG_Plant_AnimaBrambles>
+			<RG_Plant_AnimaBell>1</RG_Plant_AnimaBell>
+			<RG_Plant_TreeAnima>0.2</RG_Plant_TreeAnima>
+			<RG_Plant_TreeAnimaAncient>0.05</RG_Plant_TreeAnimaAncient>
 		</wildPlants>
 		<wildAnimals>
 			<Thrumbo>0.5</Thrumbo>
@@ -168,5 +148,4 @@
 			<li>Alpaca</li>
 		</allowedPackAnimals>
 	</BiomeDef>
-
 </Defs>

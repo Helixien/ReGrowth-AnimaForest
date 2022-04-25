@@ -1,109 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <IncidentDef>
-    <defName>RG_AF_PsychicShriek</defName>
-    <label>psychic shriek</label>
-    <category>Special</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_PsychicShriek</workerClass>
-    <letterLabel>Psychic shriek</letterLabel>
-    <letterText>Threatened anima forest released a terrifying shriek in the local area, disorienting all creatures. Colonists will become dazed for several hours.</letterText>
-    <baseChance>0</baseChance>
-  </IncidentDef>
-
-  <IncidentDef>
-    <defName>RG_AF_AnimalInsanityPulse</defName>
-    <label>animal insanity pulse</label>
-    <category>Special</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_AnimalInsanityPulse</workerClass>
-    <letterLabel>Animal insanity pulse</letterLabel>
-    <letterText>The Anima forest feeling threatened has emitted a psychic pulse that has driven all nearby animals mad.</letterText>
-    <baseChance>0</baseChance>
-  </IncidentDef>
-  
-  <IncidentDef>
-    <defName>RG_AF_ExposedOreDeposit</defName>
-    <label>exposed ore deposit</label>
-    <category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_ExposedOreDeposit</workerClass>
-    <letterLabel>Exposed ore deposit</letterLabel>
-    <letterText>In order to reward you for living in harmony with the forest, the mystic roots have pushed some valuable resources to the surface.</letterText>
-    <baseChance>1.0</baseChance>
-  </IncidentDef>
-
-  <IncidentDef>
-    <defName>RG_AF_AnimaSoothe</defName>
-    <label>anima soothe</label>
-    <category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_AnimaSoothe</workerClass>
-    <letterLabel>Anima soothe</letterLabel>
-    <letterText>In order to reward you for living in harmony with the forest, anima forest released a smooth psychic soothe, making your colonists euphoric.</letterText>
-    <baseChance>1.0</baseChance>
-  </IncidentDef>
-  
-  <IncidentDef>
-    <defName>RG_AF_HealrootSprout</defName>
-    <label>healroot sprout</label>
-    <category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_HealrootSprout</workerClass>
-    <letterLabel>{PLANT_label} sproot</letterLabel>
-    <letterText>In order to reward you for living in harmony with the forest, a {PLANT_label} has sprouted nearby. It can regularly be harvested to gain herbal medicine.</letterText>
-    <baseChance>1.0</baseChance>
-  </IncidentDef>
-  
-  <IncidentDef>
-    <defName>RG_AF_BarkGift</defName>
-    <label>bark gift</label>
-    <category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>AnimaForest.IncidentWorker_BarkGift</workerClass>
-    <letterLabel>Bark gift</letterLabel>
-    <letterText>In order to reward you for living in harmony with the forest, a large amount of anima trees have shed their bark for you.</letterText>
-    <baseChance>1.0</baseChance>
-  </IncidentDef>
-  
-  <IncidentDef ParentName="DiseaseIncident">
-    <defName>RG_AF_Disease_PsychicBrainworm</defName>
-    <label>Psychic brainworm</label>
-    <diseaseIncident>RG_AF_PsychicBrainworm</diseaseIncident>
-    <letterLabel>Disease: Psychic brainworm</letterLabel>
-  </IncidentDef>
-
-  <IncidentDef ParentName="DiseaseIncident">
-    <defName>RG_AF_Disease_AnimaSpores</defName>
-    <label>Anima spores</label>
-    <diseaseIncident>RG_AF_AnimaSpores</diseaseIncident>
-    <letterLabel>Disease: Anima spores</letterLabel>
-  </IncidentDef>
-
-  <IncidentDef ParentName="DiseaseIncident">
-    <defName>RG_AF_Disease_PsychicInsanity</defName>
-    <label>Psychic insanity</label>
-    <diseaseIncident>RG_AF_PsychicInsanity</diseaseIncident>
-    <letterLabel>Disease: Psychic insanity</letterLabel>
-  </IncidentDef>
-
-  <IncidentDef ParentName="DiseaseIncident">
-    <defName>RG_AF_Disease_NeuralMigraine</defName>
-    <label>Neural migraine</label>
-    <diseaseIncident>RG_AF_NeuralMigraine</diseaseIncident>
-    <letterLabel>Disease: Neural migraine</letterLabel>
-  </IncidentDef>
+	<!-- ================ Psychic Shriek ================ -->
+	<IncidentDef>
+		<defName>RG_PsychicShriek</defName>
+		<label>psychic shriek</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_PsychicShriek</workerClass>
+		<letterLabel>Psychic shriek</letterLabel>
+		<letterText>Threatened anima forest released a terrifying shriek in the local area, disorienting all creatures. Colonists will become dazed for several hours.</letterText>
+		<baseChance>0</baseChance>
+	</IncidentDef>
+	<!-- ================ Animal Insanity Pulse ================ -->
+	<IncidentDef>
+		<defName>RG_AnimalInsanityPulse</defName>
+		<label>animal insanity pulse</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_AnimalInsanityPulse</workerClass>
+		<letterLabel>Animal insanity pulse</letterLabel>
+		<letterText>The Anima forest feeling threatened has emitted a psychic pulse that has driven all nearby animals mad.</letterText>
+		<baseChance>0</baseChance>
+	</IncidentDef>
+	<!-- ================ Exposed Ore Deposit ================ -->
+	<IncidentDef>
+		<defName>RG_ExposedOreDeposit</defName>
+		<label>exposed ore deposit</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_ExposedOreDeposit</workerClass>
+		<letterLabel>Exposed ore deposit</letterLabel>
+		<letterText>In order to reward you for living in harmony with the forest, the mystic roots have pushed some valuable resources to the surface.</letterText>
+		<baseChance>1.0</baseChance>
+	</IncidentDef>
+	<!-- ================ Anima Soothe ================ -->
+	<IncidentDef>
+		<defName>RG_AnimaSoothe</defName>
+		<label>anima soothe</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_AnimaSoothe</workerClass>
+		<letterLabel>Anima soothe</letterLabel>
+		<letterText>In order to reward you for living in harmony with the forest, anima forest released a smooth psychic soothe, making your colonists euphoric.</letterText>
+		<baseChance>1.0</baseChance>
+	</IncidentDef>
+	<!-- ================ Healroot Sprout ================ -->
+	<IncidentDef>
+		<defName>RG_HealrootSprout</defName>
+		<label>healroot sprout</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_HealrootSprout</workerClass>
+		<letterLabel>{PLANT_label} sproot</letterLabel>
+		<letterText>In order to reward you for living in harmony with the forest, a {PLANT_label} has sprouted nearby. It can regularly be harvested to gain herbal medicine.</letterText>
+		<baseChance>1.0</baseChance>
+	</IncidentDef>
+	<!-- ================ Bark Gift ================ -->
+	<IncidentDef>
+		<defName>RG_BarkGift</defName>
+		<label>bark gift</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AnimaForest.IncidentWorker_BarkGift</workerClass>
+		<letterLabel>Bark gift</letterLabel>
+		<letterText>In order to reward you for living in harmony with the forest, a large amount of anima trees have shed their bark for you.</letterText>
+		<baseChance>1.0</baseChance>
+	</IncidentDef>
+	<!-- ================ Psychic Brain Worm ================ -->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>RG_Disease_PsychicBrainworm</defName>
+		<label>Psychic brainworm</label>
+		<diseaseIncident>RG_AF_PsychicBrainworm</diseaseIncident>
+		<letterLabel>Disease: Psychic brainworm</letterLabel>
+	</IncidentDef>
+	<!-- ================ Anima Spores ================ -->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>RG_Disease_AnimaSpores</defName>
+		<label>Anima spores</label>
+		<diseaseIncident>RG_AF_AnimaSpores</diseaseIncident>
+		<letterLabel>Disease: Anima spores</letterLabel>
+	</IncidentDef>
+	<!-- ================ Psychic Insanity ================ -->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>RG_Disease_PsychicInsanity</defName>
+		<label>Psychic insanity</label>
+		<diseaseIncident>RG_AF_PsychicInsanity</diseaseIncident>
+		<letterLabel>Disease: Psychic insanity</letterLabel>
+	</IncidentDef>
+	<!-- ================ Neural Migraine ================ -->
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>RG_Disease_NeuralMigraine</defName>
+		<label>Neural migraine</label>
+		<diseaseIncident>RG_AF_NeuralMigraine</diseaseIncident>
+		<letterLabel>Disease: Neural migraine</letterLabel>
+	</IncidentDef>
 </Defs>
