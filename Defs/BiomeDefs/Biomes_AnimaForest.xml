@@ -11,7 +11,7 @@
 		<movementDifficulty>1.5</movementDifficulty>
 		<texture>World/Biomes/AnimaForest</texture>
 		<forageability>0.5</forageability>
-		<foragedFood>RawBerries</foragedFood>
+		<foragedFood>RawFungus</foragedFood>
 		<allowRoads>false</allowRoads>
 		<allowRivers>false</allowRivers>
 		<wildPlantRegrowDays>15</wildPlantRegrowDays>
@@ -133,11 +133,13 @@
 			<Plant_Grass>8</Plant_Grass>
 			<Plant_TallGrass>3</Plant_TallGrass>
 			<Plant_GrassAnima>4</Plant_GrassAnima>
+			<RG_Plant_MysticCap>0.5</RG_Plant_MysticCap>
 			<RG_Plant_AnimaRoot>1</RG_Plant_AnimaRoot>
 			<RG_Plant_AnimaBrambles>3</RG_Plant_AnimaBrambles>
 			<RG_Plant_AnimaBell>1</RG_Plant_AnimaBell>
+			<RG_Plant_TreeAnimaSapling>0.1</RG_Plant_TreeAnimaSapling>
 			<RG_Plant_TreeAnima>0.2</RG_Plant_TreeAnima>
-			<RG_Plant_TreeAnimaAncient>0.05</RG_Plant_TreeAnimaAncient>
+			<RG_Plant_TreeAnimaGrand>0.02</RG_Plant_TreeAnimaGrand>
 		</wildPlants>
 		<wildAnimals>
 			<Thrumbo>0.5</Thrumbo>
