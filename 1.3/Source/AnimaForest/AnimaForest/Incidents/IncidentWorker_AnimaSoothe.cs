@@ -10,7 +10,7 @@ namespace AnimaForest
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             var map = parms.target as Map;
-            map.AddGameCondition(AF_DefOf.RG_AF_AnimaSoothe, GenDate.TicksPerDay * 5);
+            map.AddGameCondition(AF_DefOf.RG_AnimaSoothe, GenDate.TicksPerDay * 5);
             SendStandardLetter(this.def.letterLabel, this.def.letterText, LetterDefOf.PositiveEvent, parms, null);
             return true;
         }

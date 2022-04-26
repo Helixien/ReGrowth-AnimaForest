@@ -9,7 +9,7 @@ namespace AnimaForest
 	{
 		public override WeatherDef ForcedWeather()
 		{
-			return AF_DefOf.RG_AF_PsychicStorm;
+			return AF_DefOf.RG_PsychicStorm;
 		}
 		public override void GameConditionTick()
 		{
@@ -27,7 +27,7 @@ namespace AnimaForest
 		}
 		public static void DoFasterAgingOn(Pawn p)
 		{
-			if (!p.Position.Roofed(p.Map) && p.RaceProps.IsFlesh && p.Map.weatherManager.CurWeatherPerceived == AF_DefOf.RG_AF_PsychicStorm)
+			if (!p.Position.Roofed(p.Map) && p.RaceProps.IsFlesh && p.Map.weatherManager.CurWeatherPerceived == AF_DefOf.RG_PsychicStorm)
 			{
 				p.ageTracker.AgeBiologicalTicks += (5 * 3600000) / 41;
 			}

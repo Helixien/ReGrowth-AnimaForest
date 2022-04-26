@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ================ Psychic Fog Effect ================ -->
 	<HediffDef>
@@ -69,7 +69,7 @@
 	<ThoughtDef>
 		<defName>RG_AnimaSpores</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>RG_AF_AnimaSpores</hediff>
+		<hediff>RG_AnimaSpores</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>

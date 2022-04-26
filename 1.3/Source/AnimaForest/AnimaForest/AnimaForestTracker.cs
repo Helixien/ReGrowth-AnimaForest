@@ -54,7 +54,7 @@ namespace AnimaForest
                 }
                 else
                 {
-                    List<Thing> list = AF_DefOf.RG_AF_ExposedOreDeposite.root.Generate();
+                    List<Thing> list = AF_DefOf.RG_ExposedOreDeposite.root.Generate();
                     foreach (var cell in GenRadial.RadialCellsAround(exposedOreDepositPlace, ThingSetMaker_ExposedOreDeposit.MineablesCountRange.max / 4, true))
                     {
                         if (list.Any())

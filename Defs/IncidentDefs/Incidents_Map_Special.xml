@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ================ Psychic Shriek ================ -->
 	<IncidentDef>
@@ -82,28 +82,28 @@
 	<IncidentDef ParentName="DiseaseIncident">
 		<defName>RG_Disease_PsychicBrainworm</defName>
 		<label>Psychic brainworm</label>
-		<diseaseIncident>RG_AF_PsychicBrainworm</diseaseIncident>
+		<diseaseIncident>RG_PsychicBrainworm</diseaseIncident>
 		<letterLabel>Disease: Psychic brainworm</letterLabel>
 	</IncidentDef>
 	<!-- ================ Anima Spores ================ -->
 	<IncidentDef ParentName="DiseaseIncident">
 		<defName>RG_Disease_AnimaSpores</defName>
 		<label>Anima spores</label>
-		<diseaseIncident>RG_AF_AnimaSpores</diseaseIncident>
+		<diseaseIncident>RG_AnimaSpores</diseaseIncident>
 		<letterLabel>Disease: Anima spores</letterLabel>
 	</IncidentDef>
 	<!-- ================ Psychic Insanity ================ -->
 	<IncidentDef ParentName="DiseaseIncident">
 		<defName>RG_Disease_PsychicInsanity</defName>
 		<label>Psychic insanity</label>
-		<diseaseIncident>RG_AF_PsychicInsanity</diseaseIncident>
+		<diseaseIncident>RG_PsychicInsanity</diseaseIncident>
 		<letterLabel>Disease: Psychic insanity</letterLabel>
 	</IncidentDef>
 	<!-- ================ Neural Migraine ================ -->
 	<IncidentDef ParentName="DiseaseIncident">
 		<defName>RG_Disease_NeuralMigraine</defName>
 		<label>Neural migraine</label>
-		<diseaseIncident>RG_AF_NeuralMigraine</diseaseIncident>
+		<diseaseIncident>RG_NeuralMigraine</diseaseIncident>
 		<letterLabel>Disease: Neural migraine</letterLabel>
 	</IncidentDef>
 </Defs>

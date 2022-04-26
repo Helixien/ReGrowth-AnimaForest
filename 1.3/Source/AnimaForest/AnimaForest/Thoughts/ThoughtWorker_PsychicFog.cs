@@ -12,10 +12,10 @@ namespace AnimaForest
 		{
 			if (p.IsAffectedByPsychicFog())
             {
-				var hediff = p.health.hediffSet.GetFirstHediffOfDef(AF_DefOf.RG_AF_PsychicFogEffect);
+				var hediff = p.health.hediffSet.GetFirstHediffOfDef(AF_DefOf.RG_PsychicFogEffect);
 				if (hediff is null)
                 {
-					hediff = HediffMaker.MakeHediff(AF_DefOf.RG_AF_PsychicFogEffect, p);
+					hediff = HediffMaker.MakeHediff(AF_DefOf.RG_PsychicFogEffect, p);
 					p.health.AddHediff(hediff);
                 }
 				return ThoughtState.ActiveDefault;

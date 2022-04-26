@@ -18,7 +18,7 @@ namespace AnimaForest
     {
         public static void Postfix(Fire __instance, Map map, bool respawningAfterLoad)
         {
-            if (!respawningAfterLoad && __instance.Map?.Biome == AF_DefOf.RG_AF_AnimaForest)
+            if (!respawningAfterLoad && __instance.Map?.Biome == AF_DefOf.RG_AnimaForest)
             {
                 if (__instance.Map.weatherManager.RainRate < 0.01f)
                 {
@@ -59,7 +59,7 @@ namespace AnimaForest
         }
         public static bool Prefix(Map map, GenStepParams parms)
         {
-            if (map.Biome == AF_DefOf.RG_AF_AnimaForest)
+            if (map.Biome == AF_DefOf.RG_AnimaForest)
             {
                 return false;
             }
@@ -79,11 +79,11 @@ namespace AnimaForest
         }
         public static void Postfix(Ability __instance)
         {
-            var hediff = __instance.pawn.health.hediffSet.GetFirstHediffOfDef(AF_DefOf.RG_AF_PsychicBrainworm);
+            var hediff = __instance.pawn.health.hediffSet.GetFirstHediffOfDef(AF_DefOf.RG_PsychicBrainworm);
             if (hediff != null)
             {
                 __instance.pawn.health.RemoveHediff(hediff);
-                hediff = HediffMaker.MakeHediff(AF_DefOf.RG_AF_PsychicBrainwormParalysis, __instance.pawn);
+                hediff = HediffMaker.MakeHediff(AF_DefOf.RG_PsychicBrainwormParalysis, __instance.pawn);
                 __instance.pawn.health.AddHediff(hediff);
             }
         }

@@ -34,7 +34,7 @@ namespace AnimaForest
                 return;
             }
 
-            if (__instance.grid.tiles[tile].biome == AF_DefOf.RG_AF_AnimaForest)
+            if (__instance.grid.tiles[tile].biome == AF_DefOf.RG_AnimaForest)
             {
                 List<ThingDef> replacedList = new List<ThingDef>();
                 ThingDef item = AF_DefOf.RG_Jadeite;

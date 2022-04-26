@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--============================ Anima Heart Blossom =============================-->
 	<ThingDef ParentName="BushBase">
@@ -171,7 +171,6 @@
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<sowResearchPrerequisites Inherit="False"/>
 			<allowAutoCut>false</allowAutoCut>
-			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
 			<warnIfMarkedForCut>true</warnIfMarkedForCut>
 		</plant>
 		<comps>
@@ -323,7 +322,7 @@
 				<spawnSound>AnimaTreeProgress</spawnSound>
 			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
-				<ticksPerHeal>3000</ticksPerHeal>
+				<ticksPerHeal>4000</ticksPerHeal>
 			</li>
 			<li Class="CompProperties_ToggleDrawAffectedMeditationFoci" />
 		</comps>

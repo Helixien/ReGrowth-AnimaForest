@@ -13,7 +13,7 @@ namespace AnimaForest
             var pawns = map.mapPawns.AllPawns.Where(x => !x.Dead && x.Spawned && x.RaceProps.Humanlike).ToList();
             foreach (var pawn in pawns)
             {
-                pawn.mindState.mentalStateHandler.TryStartMentalState(AF_DefOf.RG_AF_Wander_Psychotic_Short);
+                pawn.mindState.mentalStateHandler.TryStartMentalState(AF_DefOf.RG_Wander_Psychotic_Short);
             }
             SendStandardLetter(this.def.letterLabel, this.def.letterText, LetterDefOf.NegativeEvent, parms, pawns);
             return true;
