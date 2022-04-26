@@ -110,16 +110,15 @@
 			<RG_PsychicFog>1</RG_PsychicFog>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_Grass>8</Plant_Grass>
-			<Plant_TallGrass>3</Plant_TallGrass>
-			<Plant_GrassAnima>4</Plant_GrassAnima>
+			<Plant_Grass>6</Plant_Grass>
+			<Plant_TallGrass>2</Plant_TallGrass>
+			<Plant_GrassAnima>6</Plant_GrassAnima>
+			<Plant_Moss>2.0</Plant_Moss>
 			<RG_Plant_MysticCap>0.5</RG_Plant_MysticCap>
-			<RG_Plant_AnimaRoot>1</RG_Plant_AnimaRoot>
 			<RG_Plant_AnimaBrambles>3</RG_Plant_AnimaBrambles>
-			<RG_Plant_AnimaBell>1</RG_Plant_AnimaBell>
-			<RG_Plant_TreeAnimaSapling>0.1</RG_Plant_TreeAnimaSapling>
-			<RG_Plant_TreeAnima>0.2</RG_Plant_TreeAnima>
-			<RG_Plant_TreeAnimaGrand>0.02</RG_Plant_TreeAnimaGrand>
+			<RG_Plant_TreeAnimaSapling>0.4</RG_Plant_TreeAnimaSapling>
+			<RG_Plant_TreeAnima>0.5</RG_Plant_TreeAnima>
+			<RG_Plant_TreeAnimaGrand>0.01</RG_Plant_TreeAnimaGrand>
 		</wildPlants>
 		<wildAnimals>
 			<Thrumbo>0.5</Thrumbo>
