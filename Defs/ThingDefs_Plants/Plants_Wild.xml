@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿ml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--============================ Anima Heart Blossom =============================-->
 	<ThingDef ParentName="BushBase">
 		<defName>RG_Plant_AnimaHeartBlossom</defName>
 		<label>anima heart blossom</label>
-		<description>.</description>
+		<description>texttodo</description>
 		<statBases>
 			<Beauty>6</Beauty>
 		</statBases>
@@ -26,7 +26,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_AnimaRoot</defName>
 		<label>anima root</label>
-		<description>.</description>
+		<description>A tenacious root that is in competition with other weeds over more fertile patches of soil. An offshoot of anima brambles that focuses more on absorbing energy.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -52,7 +52,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_AnimaBrambles</defName>
 		<label>anima brambles</label>
-		<description>.</description>
+		<description>A very dense cluster of vines that creeps along themselves and become entangled while competing for sunlight. Any person who tries to walk through them will have to slowly navigate as it almost consciously catches on their clothing and attempts to trip them.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -83,7 +83,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_AnimaBell</defName>
 		<label>anima bell</label>
-		<description>Clumps of vines that burst through the soil to bloom into beautiful flowers. Believed to be part of great collective roots that spread deep under the terrain which occasionally breach the surface to pollinate. The attractive qualities of the flowers encourage humans not to remove them.</description>
+		<description>A type of incredibly aggressive flowering vine that grows in areas of high Psychic energy concentrations. Because they absorb nutrients so greedily, many other flowers are unable to grow in the same region. Their striking visual qualities are a defense mechanism to prevent humans from wanting to remove them.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>4</Beauty>
@@ -112,7 +112,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_MysticCap</defName>
 		<label>mystic cap</label>
-		<description>Can be harvested for raw fungus.</description>
+		<description>An uncommon cluster of mushrooms that have adapted to regions of high Psychic energy concentrations. Can be harvested for raw fungus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>RawFungus</ThingDef>
 		</descriptionHyperlinks>
@@ -183,7 +183,7 @@
 	<ThingDef ParentName="RG_TreeAnimaBase">
 		<defName>RG_Plant_TreeAnimaSapling</defName>
 		<label>anima tree sapling</label>
-		<description>.</description>
+		<description>A young sprout from an anima tree root that failed to establish a proper connection with its surroundings, recognizable through the lack of small pearl-like seeds and rigid leaves. Comparatively short-lived but still rather pretty to look at.</description>
 		<graphicData>
 			<texPath>Things/Plant/TreeAnima</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -242,7 +242,7 @@
 	<ThingDef ParentName="RG_TreeAnimaBase">
 		<defName>RG_Plant_TreeAnimaGrand</defName>
 		<label>grand anima tree</label>
-		<description>.</description>
+		<description>A rare and long-lived tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, anima trees develop a unique form of psychic symbiosis with surrounding lifeforms, allowing them to grow in a wide variety of biomes.\n\nMost tribes believe that anima trees are not simply trees, but are rather the physical extremities of a single world spirit. These particular specimens have existed for many years and sent forth many roots, culminating in affecting the entire region around them. Anyone attempting to meditate on similar flora will find only the thickest of anima trees will offer any real benefits.</description>
 		<graphicData>
 			<texPath>Things/Plant/GrandAnimaTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
