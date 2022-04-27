@@ -6,13 +6,13 @@
 		<damageEffecter>Damage_HitMechanoid</damageEffecter>
 		<genericWounds>
 			<li>
-				<texture>Things/Pawn/Wounds/WoundMechA</texture>
+				<texture>Things/Pawn/Wounds/WoundArchoA</texture>
 			</li>
 			<li>
-				<texture>Things/Pawn/Wounds/WoundMechB</texture>
+				<texture>Things/Pawn/Wounds/WoundArchoB</texture>
 			</li>
 			<li>
-				<texture>Things/Pawn/Wounds/WoundMechC</texture>
+				<texture>Things/Pawn/Wounds/WoundArchoC</texture>
 			</li>
 		</genericWounds>
 	</FleshTypeDef>

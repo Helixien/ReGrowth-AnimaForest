@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--============================ Archo Blade Base =============================-->
+	<ThingDef Name="RG_BaseMeleeWeaponArcho" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+			<li>MeleePiercer</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<relicChance>0</relicChance>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+	<!--============================ Archo Blade =============================-->
+	<ThingDef ParentName="RG_BaseMeleeWeaponArcho">
+		<defName>RG_MeleeWeapon_ArchoLongBlade</defName>
+		<label>whispering sorrow</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/ArchoLongBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>ArchoMelee</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<Mass>10</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>52</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>52</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

@@ -9,7 +9,7 @@
 			<Cleanliness>-5</Cleanliness>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Filth/MachineBits</texPath>
+			<texPath>Things/Filth/ArchotechBits</texPath>
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>

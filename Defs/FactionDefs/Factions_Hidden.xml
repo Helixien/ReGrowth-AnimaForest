@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--============================ Anima Forest Faction =============================-->
 	<FactionDef ParentName="FactionBase">
 		<defName>RG_AnimaForestSpirit</defName>
 		<label>greater anima spirit</label>
