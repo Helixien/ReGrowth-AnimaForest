@@ -8,6 +8,8 @@ using System.Linq;
 using System;
 using RimWorld.BaseGen;
 using Verse.AI;
+using static System.Collections.Specialized.BitVector32;
+using System.Security.Cryptography;
 
 namespace AnimaForest
 {

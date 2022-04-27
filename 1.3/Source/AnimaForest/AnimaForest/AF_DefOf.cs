@@ -29,5 +29,6 @@ namespace AnimaForest
 		public static HediffDef RG_PsychicBrainworm;
 		public static HediffDef RG_PsychicBrainwormParalysis;
 		public static MentalStateDef WanderConfused;
+		public static PawnKindDef RG_ArchoEntity_Conservator;
 	}
 }

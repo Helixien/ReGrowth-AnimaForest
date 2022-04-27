@@ -38,7 +38,7 @@
 		</statBases>
 		<race>
 			<intelligence>ToolUser</intelligence>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>RG_ArchoEntity</thinkTreeMain>
 			<baseBodySize>1.0</baseBodySize>
 			<lifeStageAges>
 				<li>
@@ -106,6 +106,14 @@
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
+		<comps>
+			<li Class="AnimaForest.CompProperties_PawnTeleporter">
+				<nonCombatTeleportChance>0.1</nonCombatTeleportChance>
+				<cooldown>7200</cooldown>
+				<minDistance>70</minDistance>
+				<disableManhunterState>true</disableManhunterState>
+			</li>
+		</comps>
 	</ThingDef>
 	<PawnKindDef ParentName="RG_BaseArchoEntityKind">
 		<defName>RG_ArchoEntity_Conservator</defName>

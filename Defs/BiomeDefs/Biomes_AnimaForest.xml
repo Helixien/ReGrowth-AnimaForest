@@ -123,6 +123,7 @@
 		</wildPlants>
 		<wildAnimals>
 			<Thrumbo>0.5</Thrumbo>
+			<RG_ArchoEntity_Conservator>1</RG_ArchoEntity_Conservator>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>

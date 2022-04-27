@@ -12,6 +12,12 @@ namespace AnimaForest
 
         public const int MinHarmonyDuration = GenDate.TicksPerDay * 7;
         public bool InHarmony => (Find.TickManager.TicksGame - lastHarmTick) >= MinHarmonyDuration;
+
+        public Dictionary<Pawn, IntVec3> pawnsToTeleport = new Dictionary<Pawn, IntVec3>();
+
+        private List<Pawn> pawnsToTeleportKeys;
+
+        private List<IntVec3> pawnsToTeleportValues;
         public AnimaForestTracker(Map map) : base(map)
         {
 
@@ -39,6 +45,35 @@ namespace AnimaForest
         public override void MapComponentTick()
         {
             base.MapComponentTick();
+
+            if (pawnsToTeleport != null && pawnsToTeleport.Count > 0)
+            {
+                List<Pawn> keysToRemove = new List<Pawn>();
+                foreach (var pawnData in pawnsToTeleport)
+                {
+                    var teleportComp = pawnData.Key.TryGetComp<CompPawnTeleporter>();
+                    if (teleportComp != null && teleportComp.disappear && Find.TickManager.TicksGame >= teleportComp.appearInTick)
+                    {
+                        GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value, this.map,
+                            ThingPlaceMode.Near, null, null, default(Rot4));
+                        teleportComp.disappear = false;
+                        if (teleportComp.Props.disableManhunterState
+                            && pawnData.Key.mindState.mentalStateHandler.CurStateDef
+                                == MentalStateDefOf.Manhunter)
+                        {
+                            pawnData.Key.mindState.mentalStateHandler.Reset();
+                        }
+                        keysToRemove.Add(pawnData.Key);
+                        FleckMaker.Static(pawnData.Key.Position, this.map, FleckDefOf.PsycastAreaEffect, 10f);
+                        //Log.Message("APPEARED");
+                    }
+                }
+                foreach (var pawn in keysToRemove)
+                {
+                    pawnsToTeleport.Remove(pawn);
+                }
+            }
+
             if (exposedOreDepositPlace.IsValid)
             {
                 if (oreDepositIncidentEndTick > Find.TickManager.TicksGame)
@@ -93,6 +128,7 @@ namespace AnimaForest
             Scribe_Values.Look(ref lastHarmTick, "lastHarmTick");
             Scribe_Values.Look(ref oreDepositIncidentEndTick, "oreDepositIncidentEndTick");
             Scribe_Values.Look(ref exposedOreDepositPlace, "exposedOreDepositPlace", IntVec3.Invalid);
+            Scribe_Collections.Look(ref pawnsToTeleport, "pawnsToTeleport", LookMode.Deep, LookMode.Value, ref this.pawnsToTeleportKeys, ref this.pawnsToTeleportValues);
         }
     }
 }

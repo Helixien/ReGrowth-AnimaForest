@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AF_DefOf.cs" />
+    <Compile Include="CompPawnTeleporter.cs" />
     <Compile Include="GameConditions\GameCondition_AnimaSoothe.cs" />
     <Compile Include="GameConditions\GameCondition_PsychicStorm.cs" />
+    <Compile Include="Harmony\MeditationUtility_CountsAsArtificialBuilding_ThingDef_Patch.cs" />
+    <Compile Include="Harmony\Pawn_PathFollower_StartPath_Patch.cs" />
     <Compile Include="Harmony\UniqueFeatures.cs" />
     <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
