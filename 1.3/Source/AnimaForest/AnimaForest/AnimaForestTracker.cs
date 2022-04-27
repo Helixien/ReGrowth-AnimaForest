@@ -45,21 +45,18 @@ namespace AnimaForest
         public override void MapComponentTick()
         {
             base.MapComponentTick();
-
             if (pawnsToTeleport != null && pawnsToTeleport.Count > 0)
             {
                 List<Pawn> keysToRemove = new List<Pawn>();
                 foreach (var pawnData in pawnsToTeleport)
                 {
-                    var teleportComp = pawnData.Key.TryGetComp<CompPawnTeleporter>();
+                    var teleportComp = pawnData.Key?.TryGetComp<CompPawnTeleporter>();
                     if (teleportComp != null && teleportComp.disappear && Find.TickManager.TicksGame >= teleportComp.appearInTick)
                     {
                         GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value, this.map,
                             ThingPlaceMode.Near, null, null, default(Rot4));
                         teleportComp.disappear = false;
-                        if (teleportComp.Props.disableManhunterState
-                            && pawnData.Key.mindState.mentalStateHandler.CurStateDef
-                                == MentalStateDefOf.Manhunter)
+                        if (teleportComp.Props.disableManhunterState && pawnData.Key.mindState?.mentalStateHandler?.CurStateDef == MentalStateDefOf.Manhunter)
                         {
                             pawnData.Key.mindState.mentalStateHandler.Reset();
                         }

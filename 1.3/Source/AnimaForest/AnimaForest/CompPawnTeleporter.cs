@@ -66,6 +66,7 @@ namespace AnimaForest
 
         public void Teleport(Pawn pawn, IntVec3 loc)
         {
+            Log.Message("Teleporting");
             FleckMaker.Static(pawn.Position, pawn.Map, FleckDefOf.PsycastAreaEffect, 10f);
             disappear = true;
             appearInTick = Find.TickManager.TicksGame + (60 * Rand.RangeInclusive(1, 10));
