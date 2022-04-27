@@ -185,7 +185,7 @@
 		<label>anima tree sapling</label>
 		<description>A young sprout from an anima tree root that failed to establish a proper connection with its surroundings, recognizable through the lack of small pearl-like seeds and rigid leaves. Comparatively short-lived but still rather pretty to look at.</description>
 		<graphicData>
-			<texPath>Things/Plant/TreeAnimaSapling</texPath>
+			<texPath>Things/Plant/AnimaTreeSapling</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.12, 0.08, 0.1)</volume>
@@ -205,6 +205,7 @@
 		</plant>
 		<comps Inherit="False"/>
 	</ThingDef>
+	<!--============================ Anima Tree =============================-->
 	<ThingDef ParentName="RG_TreeAnimaBase">
 		<defName>RG_Plant_TreeAnima</defName>
 		<label>anima tree</label>
@@ -245,7 +246,7 @@
 		<label>grand anima tree</label>
 		<description>A rare and long-lived tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, anima trees develop a unique form of psychic symbiosis with surrounding lifeforms, allowing them to grow in a wide variety of biomes.\n\nMost tribes believe that anima trees are not simply trees, but are rather the physical extremities of a single world spirit. These particular specimens have existed for many years and sent forth many roots, culminating in affecting the entire region around them. Anyone attempting to meditate on similar flora will find only the thickest of anima trees will offer any real benefits.</description>
 		<graphicData>
-			<texPath>Things/Plant/TreeAnimaGrand</texPath>
+			<texPath>Things/Plant/AnimaTreeGrand</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.12, 0.08, 0.1)</volume>
