@@ -21,6 +21,7 @@
 			<smoothedThing>RG_SmoothedJadeite</smoothedThing>
 		</building>
 	</ThingDef>
+
 	<ThingDef ParentName="RG_JadeiteBase">
 		<defName>RG_SmoothedJadeite</defName>
 		<label>smoothed jadeite</label>
@@ -37,7 +38,7 @@
 		</graphicData>
 		<statBases>
 			<Beauty>2</Beauty>
-			<MarketValue>25</MarketValue>
+			<MarketValue>22</MarketValue>
 		</statBases>
 		<building>
 			<isNaturalRock>false</isNaturalRock>
@@ -48,6 +49,8 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
+	
+	<!-- ================ Psychic Fog Effect ================ -->
 	<ThingDef ParentName="ChunkRockBase">
 		<defName>RG_ChunkJadeite</defName>
 		<label>jadeite chunk</label>
@@ -60,9 +63,10 @@
 		</statBases>
 		<soundDrop>ChunkRock_Drop</soundDrop>
 		<butcherProducts>
-			<BlocksSandstone>20</BlocksSandstone>
+			<Jade>8</Jade>
 		</butcherProducts>
 	</ThingDef>
+	<!-- ================ Jadeite Recipe ================ -->
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>RG_Make_JadeFromJadeite</defName>
 		<label>make jade</label>
