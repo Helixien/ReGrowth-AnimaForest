@@ -122,7 +122,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/ArchoEntities/Conservator/Archo_Conservator</texPath>
+					<texPath>Things/Pawn/ArchoEntities/Conservator/Conservator</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2.5</drawSize>
 					<shadowData>
