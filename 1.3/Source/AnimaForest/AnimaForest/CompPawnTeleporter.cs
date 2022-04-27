@@ -48,7 +48,6 @@ namespace AnimaForest
             {
                 var hostiles = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.AttackTarget).Where(x
                     => x.HostileTo(pawn));
-                readyToUseTicks = Find.TickManager.TicksGame + Props.cooldown;
                 IntVec3 loc = IntVec3.Invalid;
                 if (CellFinderLoose.TryFindRandomNotEdgeCellWith(10, (IntVec3 x) =>
                     hostiles.Where(y => y.Position.DistanceTo(x) > Props.minDistance).Count() == 0 && x.Walkable(this.parent.Map) && !x.Fogged(this.parent.Map),
@@ -74,6 +73,7 @@ namespace AnimaForest
             if (mapComp.pawnsToTeleport == null) mapComp.pawnsToTeleport = new Dictionary<Pawn, IntVec3>();
             mapComp.pawnsToTeleport[pawn] = loc;
             pawn.DeSpawn(DestroyMode.Vanish);
+            readyToUseTicks = Find.TickManager.TicksGame + Props.cooldown;
         }
 
         public override void PostExposeData()
