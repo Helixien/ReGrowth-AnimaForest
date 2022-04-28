@@ -47,9 +47,10 @@
     <Compile Include="GameConditions\GameCondition_AnimaSoothe.cs" />
     <Compile Include="GameConditions\GameCondition_PsychicStorm.cs" />
     <Compile Include="Harmony\MeditationUtility_CountsAsArtificialBuilding_ThingDef_Patch.cs" />
+    <Compile Include="Harmony\Pawn_HealthTracker_MakeDowned_Patch.cs" />
     <Compile Include="Harmony\Pawn_PathFollower_StartPath_Patch.cs" />
+    <Compile Include="Harmony\RaceProperties_SpecialDisplayStats_Patch.cs" />
     <Compile Include="Harmony\UniqueFeatures.cs" />
-    <Compile Include="Harmony\GenStep_Terrain_TerrainFrom.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\AnimaWrath.cs" />
     <Compile Include="Harmony\World_NaturalRockTypesIn.cs" />
