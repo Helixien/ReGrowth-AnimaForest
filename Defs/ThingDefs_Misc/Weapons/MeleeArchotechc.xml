@@ -7,10 +7,9 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<thingCategories>
 			<li>WeaponsMelee</li>
-			<li>MeleePiercer</li>
 		</thingCategories>
 		<weaponClasses>
-			<li>Melee</li>
+			<li>MeleePiercer</li>
 		</weaponClasses>
 		<relicChance>0</relicChance>
 		<inspectorTabs>
@@ -25,6 +24,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/ArchoLongBlade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
 		</graphicData>
 		<weaponTags>
 			<li>ArchoMelee</li>
@@ -34,6 +34,7 @@
 		</thingSetMakerTags>
 		<statBases>
 			<Mass>10</Mass>
+			<MarketValue>6000</MarketValue>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<tools>
@@ -62,5 +63,9 @@
 				<cooldownTime>2.3</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>
