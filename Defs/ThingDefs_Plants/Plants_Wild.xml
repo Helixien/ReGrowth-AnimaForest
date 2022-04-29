@@ -22,32 +22,6 @@
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
-	<!--============================ Anima Root =============================-->
-	<ThingDef ParentName="PlantBase">
-		<defName>RG_Plant_AnimaRoot</defName>
-		<label>anima root</label>
-		<description>A tenacious root that is in competition with other weeds over more fertile patches of soil. An offshoot of anima brambles that focuses more on absorbing energy.</description>
-		<statBases>
-			<MaxHitPoints>90</MaxHitPoints>
-			<Nutrition>0.25</Nutrition>
-		</statBases>
-		<pathCost>14</pathCost>
-		<graphicData>
-			<texPath>Things/Plant/AnimaRoot</texPath>
-		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible/>
-		<plant>
-			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<growDays>3</growDays>
-			<harvestWork>60</harvestWork>
-			<visualSizeRange>0.55~0.95</visualSizeRange>
-			<topWindExposure>0.5</topWindExposure>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>40</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-		</plant>
-	</ThingDef>
 	<!--============================ Anima Brambles =============================-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_AnimaBrambles</defName>
@@ -98,12 +72,12 @@
 		<plant>
 			<fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>2.5</growDays>
-			<maxMeshCount>4</maxMeshCount>
 			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>9</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>20</wildClusterWeight>
 			<visualSizeRange>0.7~0.8</visualSizeRange>
 			<topWindExposure>0.3</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<purpose>Beauty</purpose>
 		</plant>
@@ -151,6 +125,48 @@
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
+	</ThingDef>
+	<!--============================ Anima Nima =============================-->
+	<ThingDef ParentName="CavePlantBase">
+		<defName>RG_Plant_Nima</defName>
+		<label>nima</label>
+		<description>.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Nima</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>40</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>20</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<maxMeshCount>4</maxMeshCount>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<purpose>Food</purpose>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4.5</glowRadius>
+				<glowColor>(10,50,64,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 	<!--============================ Anima Tree Base =============================-->
 	<ThingDef ParentName="TreeBase" Name="RG_TreeAnimaBase" Abstract="True">
@@ -326,7 +342,7 @@
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>4000</ticksPerHeal>
 			</li>
-			<li Class="CompProperties_ToggleDrawAffectedMeditationFoci" />
+			<li Class="CompProperties_ToggleDrawAffectedMeditationFoci"/>
 		</comps>
 	</ThingDef>
 </Defs>

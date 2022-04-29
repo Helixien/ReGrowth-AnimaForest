@@ -108,7 +108,7 @@
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>10</RainyThunderstorm>
 			<FoggyRain>10</FoggyRain>
-			<RG_PsychicFog>1</RG_PsychicFog>
+			<RG_PsychicFog>2</RG_PsychicFog>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>6</Plant_Grass>
@@ -116,14 +116,15 @@
 			<Plant_GrassAnima>6</Plant_GrassAnima>
 			<Plant_Moss>2.0</Plant_Moss>
 			<RG_Plant_MysticCap>0.5</RG_Plant_MysticCap>
+			<RG_Plant_AnimaBell>0.05</RG_Plant_AnimaBell>
 			<RG_Plant_AnimaBrambles>3</RG_Plant_AnimaBrambles>
 			<RG_Plant_TreeAnimaSapling>0.4</RG_Plant_TreeAnimaSapling>
 			<RG_Plant_TreeAnima>0.5</RG_Plant_TreeAnima>
-			<RG_Plant_TreeAnimaGrand>0.01</RG_Plant_TreeAnimaGrand>
+			<RG_Plant_TreeAnimaGrand>0.03</RG_Plant_TreeAnimaGrand>
 		</wildPlants>
 		<wildAnimals>
-			<Thrumbo>0.5</Thrumbo>
-			<RG_ArchoEntity_Conservator>1</RG_ArchoEntity_Conservator>
+			<Thrumbo>0.2</Thrumbo>
+			<RG_ArchoEntity_Conservator>0.5</RG_ArchoEntity_Conservator>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
