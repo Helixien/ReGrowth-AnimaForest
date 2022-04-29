@@ -16,15 +16,13 @@ namespace AnimaForest
     [HarmonyPatch("SpawnSetup")]
     public static class Fire_SpawnSetup_Patch
     {
-        public static void Postfix(Fire __instance, Map map, bool respawningAfterLoad)
+        public static void Postfix(Fire __instance, bool respawningAfterLoad)
         {
             if (!respawningAfterLoad && __instance.Map?.Biome == AF_DefOf.RG_AnimaForest)
             {
-                if (__instance.Map.weatherManager.RainRate < 0.01f)
+                if (__instance.Map.weatherManager.RainRate < 0.01f && __instance.Map.weatherManager.curWeather != AF_DefOf.Rain)
                 {
-                    var weatherDef = WeatherDef.Named("Rain");
-                    __instance.Map.weatherManager.TransitionTo(weatherDef);
-                    Traverse.Create(__instance.Map.weatherDecider).Field("curWeatherDuration").SetValue(weatherDef.durationRange.RandomInRange);
+                    __instance.Map.weatherManager.TransitionTo(AF_DefOf.Rain);
                 }
             }
         }

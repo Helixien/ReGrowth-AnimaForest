@@ -30,5 +30,8 @@ namespace AnimaForest
 		public static HediffDef RG_PsychicBrainwormParalysis;
 		public static MentalStateDef WanderConfused;
 		public static ThingDef RG_ArchoEntity_Conservator;
+		public static WeatherDef Rain;
+		public static FleshTypeDef RG_ArchoEntity;
+		public static SoundDef AnimaTreeScream;
 	}
 }

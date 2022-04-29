@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFECore.ObjectSpawnsDef>
+		<defName>RG_ObjectSpawn_ArchoEntity_Conservator</defName>
+		<pawnKindDef>RG_ArchoEntity_Conservator</pawnKindDef>
+		<factionDef>RG_Archotech</factionDef>
+		<allowOnWater>false</allowOnWater>
+		<numberToSpawn>2~4</numberToSpawn>
+		<allowedBiomes>
+			<li>RG_AnimaForest</li>
+		</allowedBiomes>
+	</VFECore.ObjectSpawnsDef>
+	
+</Defs>

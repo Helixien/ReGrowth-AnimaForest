@@ -12,6 +12,10 @@
           <treeDef>Downed</treeDef>
         </li>
         
+        <li Class="JobGiver_ReactToCloseMeleeThreat" />
+		
+		<li Class="JobGiver_AIFightEnemies"/>
+
         <!-- Do a queued job -->
         <li Class="ThinkNode_QueuedJob" />
 
@@ -19,6 +23,7 @@
         <li Class="ThinkNode_Subtree">
           <treeDef>LordDuty</treeDef>
         </li>
+		
 
         <!-- Idle -->
         <li Class="ThinkNode_Tagger">

@@ -2,6 +2,8 @@
 using System.Linq;
 using RimWorld;
 using Verse;
+using Verse.Sound;
+using static HarmonyLib.Code;
 
 namespace AnimaForest
 {
@@ -14,8 +16,9 @@ namespace AnimaForest
             foreach (var pawn in pawns)
             {
                 pawn.mindState.mentalStateHandler.TryStartMentalState(AF_DefOf.RG_Wander_Psychotic_Short);
-            }
-            SendStandardLetter(this.def.letterLabel, this.def.letterText, LetterDefOf.NegativeEvent, parms, pawns);
+}
+            AF_DefOf.AnimaTreeScream.PlayOneShotOnCamera(map);
+            SendStandardLetter(this.def.letterLabel, this.def.letterText, LetterDefOf.ThreatBig, parms, pawns);
             return true;
         }
     }
