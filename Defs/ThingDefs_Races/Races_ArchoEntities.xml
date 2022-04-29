@@ -102,10 +102,10 @@
 		</race>
 		<comps>
 			<li Class="AnimaForest.CompProperties_PawnTeleporter">
-				<nonCombatTeleportChance>0.5</nonCombatTeleportChance>
+				<nonCombatTeleportChance>0.3</nonCombatTeleportChance>
 				<cooldown>7200</cooldown>
 				<minDistance>70</minDistance>
-				<disableManhunterState>true</disableManhunterState>
+				<disableManhunterState>false</disableManhunterState>
 			</li>
 		</comps>
 	</ThingDef>
