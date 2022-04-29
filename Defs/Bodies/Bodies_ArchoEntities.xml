@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyDef>
+		<defName>RG_ArchoEntity_Conservator</defName>
+		<label>conservator</label>
+		<corePart>
+			<def>RG_ArchoThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>RG_ArchoNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>RG_ArchoHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>RG_ArchoQuantumCerebrum</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>RG_ArchoOculus</def>
+									<coverage>0.26</coverage>
+								</li>
+								<li>
+									<def>RG_ArchoAuris</def>
+									<customLabel>left archotech auris</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>RG_ArchoAuris</def>
+									<customLabel>right archotech auris</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>RG_ArchoNasus</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RG_ArchoShoulder</def>
+					<customLabel>left archotech shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>RG_ArchoArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>RG_ArchoHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RG_ArchoShoulder</def>
+					<customLabel>right archotech shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>RG_ArchoArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>RG_ArchoHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>RG_ArchoFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RG_ArchoLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>RG_ArchoFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RG_ArchoLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>RG_ArchoFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RG_ArchoAnimus</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RG_ArchoCortium</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RG_ArchoGenerans</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

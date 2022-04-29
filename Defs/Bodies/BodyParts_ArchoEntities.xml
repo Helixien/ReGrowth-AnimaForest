@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--============================ Archo Neck=============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoNeck</defName>
+		<label>neck</label>
+		<hitPoints>150</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+			<li>TalkingPathway</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo head =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoHead</defName>
+		<label>head</label>
+		<hitPoints>300</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+	<!--============================ Archo Brain =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoQuantumCerebrum</defName>
+		<label>archotech quantum cerebrum</label>
+		<hitPoints>200</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ConsciousnessSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Heart =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoAnimus</defName>
+		<label>archotech animus</label>
+		<hitPoints>60</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>BloodPumpingSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Heart 2 =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoCortium</defName>
+		<label>archotech cortium</label>
+		<hitPoints>50</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Generator =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoGenerans</defName>
+		<label>archotech generans</label>
+		<hitPoints>75</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ConsciousnessSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Eye =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoOculus</defName>
+		<label>archotech oculus</label>
+		<hitPoints>50</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<socketed>true</socketed>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Ear =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoAuris</defName>
+		<label>archotech auris</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Nose =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoNasus</defName>
+		<label>archotech nasus</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+	<!--============================ Archo Shoulder =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoShoulder</defName>
+		<label>shoulder</label>
+		<hitPoints>85</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Arm =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoArm</defName>
+		<label>arm</label>
+		<hitPoints>65</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Hand =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoHand</defName>
+		<label>hand</label>
+		<hitPoints>40</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Finger =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoFinger</defName>
+		<label>finger</label>
+		<hitPoints>14</hitPoints>
+		<frostbiteVulnerability>10</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Leg =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoLeg</defName>
+		<label>leg</label>
+		<hitPoints>100</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Foot =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoFoot</defName>
+		<label>foot</label>
+		<hitPoints>60</hitPoints>
+		<frostbiteVulnerability>2</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	<!--============================ Archo Body =============================-->
+	<BodyPartDef>
+		<defName>RG_ArchoThorax</defName>
+		<label>thorax</label>
+		<hitPoints>400</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+</Defs>

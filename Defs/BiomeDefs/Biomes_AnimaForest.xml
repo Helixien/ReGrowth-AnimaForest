@@ -13,8 +13,8 @@
 		<texture>World/Biomes/AnimaForest</texture>
 		<forageability>0.5</forageability>
 		<foragedFood>RawFungus</foragedFood>
-		<allowRoads>false</allowRoads>
-		<allowRivers>false</allowRivers>
+		<allowRoads>true</allowRoads>
+		<allowRivers>true</allowRivers>
 		<wildPlantRegrowDays>15</wildPlantRegrowDays>
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Jungle</li>
