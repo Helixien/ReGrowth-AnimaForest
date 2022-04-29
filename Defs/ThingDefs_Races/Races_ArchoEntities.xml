@@ -47,6 +47,7 @@
 	</ThingDef>
 	<!--============================ Archo Entity Kind Base =============================-->
 	<PawnKindDef Name="RG_BaseArchoEntityKind" Abstract="True">
+		<defaultFactionType>RG_Archotech</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
