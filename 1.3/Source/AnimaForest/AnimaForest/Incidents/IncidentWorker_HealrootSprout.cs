@@ -67,7 +67,9 @@ namespace AnimaForest
 					break;
 				}
 				result.GetPlant(map)?.Destroy();
-				Thing thing2 = GenSpawn.Spawn(PlantDef, result, map);
+				var plant = ThingMaker.MakeThing(PlantDef) as Plant;
+				plant.Growth = Rand.Range(0.75f, 1f);
+				Thing thing2 = GenSpawn.Spawn(plant, result, map);
 				if (thing == null)
 				{
 					thing = thing2;
