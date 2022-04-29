@@ -109,6 +109,9 @@
 				<disableManhunterState>false</disableManhunterState>
 			</li>
 		</comps>
+		<li Class="AnimalBehaviours.CompProperties_Regeneration">
+			<rateInTicks>20</rateInTicks>
+		</li>
 	</ThingDef>
 	<PawnKindDef ParentName="RG_BaseArchoEntityKind">
 		<defName>RG_ArchoEntity_Conservator</defName>
