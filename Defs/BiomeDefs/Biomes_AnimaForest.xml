@@ -130,5 +130,30 @@
 			<li>Elephant</li>
 			<li>Alpaca</li>
 		</allowedPackAnimals>
+		<modExtensions>
+			<li Class="VFECore.BiomeExtension">
+				<terrainsToSwap>
+					<li>
+						<from>Gravel</from>
+						<to>RG_AnimaSoilCracked</to>
+					</li>
+				</terrainsToSwap>
+				<skipGenSteps>
+					<li>ScatterRoadDebris</li>
+					<li>ScatterCaveDebris</li>
+					<li>AncientUtilityBuilding</li>
+					<li>MechanoidRemains</li>
+					<li>AncientTurret</li>
+					<li>AncientMechs</li>
+					<li>AncientLandingPad</li>
+					<li>AncientFences</li>
+					<li>AncientPipelineSection</li>
+					<li>AncientJunkClusters</li>
+					<li>AnimaTrees</li>
+					<li>ScatterRuinsSimple</li>
+					<li>ScatterShrines</li>
+				</skipGenSteps>
+			</li>
+		</modExtensions>
 	</BiomeDef>
 </Defs>

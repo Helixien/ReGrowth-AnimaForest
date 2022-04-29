@@ -31,43 +31,6 @@ namespace AnimaForest
     }
 
     [HarmonyPatch]
-    public static class GenSteps_Patch
-    {
-        private static List<string> genStepsToSkipOnAnimaForest = new List<string>
-        {
-            "ScatterRoadDebris",
-            "ScatterCaveDebris",
-            "AncientUtilityBuilding",
-            "MechanoidRemains",
-            "AncientTurret",
-            "AncientMechs",
-            "AncientLandingPad",
-            "AncientFences",
-            "AncientPipelineSection",
-            "AncientJunkClusters",
-            "AnimaTrees" // is being handled by custom scatter code, so we exclude it
-        };
-        public static IEnumerable<MethodBase> TargetMethods()
-        {
-            foreach (var genStepDef in DefDatabase<GenStepDef>.AllDefs)
-            {
-                if (genStepsToSkipOnAnimaForest.Contains(genStepDef.defName))
-                {
-                    yield return AccessTools.Method(genStepDef.genStep.GetType(), "Generate");
-                }
-            }
-        }
-        public static bool Prefix(Map map, GenStepParams parms)
-        {
-            if (map.Biome == AF_DefOf.RG_AnimaForest)
-            {
-                return false;
-            }
-            return true;
-        }
-    }
-
-    [HarmonyPatch]
     public static class CastAbility_Patch
     {
         public static IEnumerable<MethodBase> TargetMethods()

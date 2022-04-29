@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -23,25 +24,13 @@ namespace AnimaForest
         public static bool notifyDamageTaken;
         private static void Postfix(Pawn_PathFollower __instance, Pawn ___pawn, LocalTargetInfo dest, PathEndMode peMode)
         {
-            if (!notifyDamageTaken && ___pawn.kindDef == AF_DefOf.RG_ArchoEntity_Conservator)
+            if (!notifyDamageTaken && ___pawn.def == AF_DefOf.RG_ArchoEntity_Conservator)
             {
                 var comp = ___pawn.GetComp<CompPawnTeleporter>();
                 if (comp.CanUseTeleport() && Rand.Chance(comp.Props.nonCombatTeleportChance))
                 {
                     comp.Teleport(___pawn, __instance.Destination.Cell);
                 }
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(Pawn_HealthTracker), "MakeDowned")]
-    public static class MakeDowned_Patch
-    {
-        private static void Postfix(Pawn ___pawn, DamageInfo? dinfo, Hediff hediff)
-        {
-            if (___pawn.Downed && ___pawn.kindDef == AF_DefOf.RG_ArchoEntity_Conservator)
-            {
-                ___pawn.Kill(dinfo, hediff);
             }
         }
     }
